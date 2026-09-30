@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio — Rothman Torres Melo
 
-## Getting Started
+Portafolio personal de **Rothman Torres Melo**, Software Engineer & Technical Lead.
 
-First, run the development server:
+Construido con **Next.js**, **TypeScript**, **Tailwind CSS** y **Framer Motion**.
+
+## Desarrollo local
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev   # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editar el contenido
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Todo el contenido (perfil, experiencia, proyectos, habilidades, certificaciones y contacto) está en
+[`data/portfolio.ts`](data/portfolio.ts). Los componentes se actualizan automáticamente.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Foto de perfil: `public/profile.png`
+- Icono del sitio: `app/icon.svg`, `app/favicon.ico` y `app/apple-icon.png`
 
-## Learn More
+## Estructura
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/          layout, página principal, estilos e iconos
+components/   secciones (Hero, About, Experience, Projects, Skills, Education, Contact…)
+data/         contenido del portafolio
+public/       imágenes estáticas
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Despliegue
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desplegado en [Vercel](https://vercel.com). Cada `git push` a `main` publica una nueva versión automáticamente.
